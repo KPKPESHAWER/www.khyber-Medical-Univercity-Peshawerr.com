@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Search & SEO Tags -->
+  <title>KMU MDCAT Result Verification - Ahmad Akbar</title>
+  <meta name="description" content="Check and verify KMU MDCAT Result online for Ahmad Akbar. Verification portal for KMU Peshawar MDCAT 2026.">
+  <meta name="keywords" content="KMU Result, KMU MDCAT 2026, Ahmad Akbar KMU Result, KMU Result Verification, KMU Peshawar MDCAT">
+  <meta name="author" content="Ahmad Akbar">
+
+  <!-- Social Media & Link Sharing Meta Tags (WhatsApp / Facebook Preview) -->
+  <meta property="og:title" content="KMU MDCAT Result Verification - Ahmad Akbar">
+  <meta property="og:description" content="Online Verification Portal for KMU MDCAT Result 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ahmadtest.com/">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .search-card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    .search-card h2 {
+      margin-top: 0;
+      color: #333;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 4px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .btn-search {
+      width: 100%;
+      background-color: #800000;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .btn-search:hover {
+      background-color: #600000;
+    }
+
+    /* Result Card Styling - Hidden by default */
+    .result-card {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      display: none; 
+      box-sizing: border-box;
+    }
+
+    .top-section {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .info-left {
+      flex: 1;
+    }
+
+    .info-row {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #000;
+    }
+
+    .info-row strong {
+      font-weight: bold;
+    }
+
+    .reg-num {
+      position: absolute;
+      top: 20px;
+      right: 150px;
+      font-size: 18px;
+      color: #000;
+    }
+
+    .profile-img {
+      width: 110px;
+      height: 130px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+    }
+
+    /* Table Grid */
+    .grid-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .grid-table td {
+      border: 1px solid #e0e0e0;
+      padding: 12px;
+      font-size: 16px;
+      vertical-align: middle;
+    }
+
+    .label-col {
+      width: 25%;
+      color: #333;
+    }
+
+    .val-col {
+      width: 25%;
+      font-weight: 500;
+      color: #000;
+    }
+
+    .bold-val {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .bottom-bar {
+      height: 15px;
+      background-color: #800000;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Search / Input Form -->
+  <div class="search-card">
+    <h2>KMU peshawer Result Search</h2>
+    <div class="form-group">
+      <label for="inputCnic">Enter CNIC / Roll No:</label>
+      <input type="text" id="inputCnic" value="1710173233685">
+    </div>
+    <div class="form-group">
+      <label for="inputName">Full Name:</label>
+      <input type="text" id="inputName" value="Ahmad Akbar">
+    </div>
+    <div class="form-group">
+      <label for="inputFather">Father Name:</label>
+      <input type="text" id="inputFather" value="Gull Akbar">
+    </div>
+    <div class="form-group">
+      <label for="inputMarks">Marks:</label>
+      <input type="text" id="inputMarks" value="153">
+    </div>
+    <button class="btn-search" onclick="searchResult()">Search Result</button>
+  </div>
+
+  <!-- Result Display Card -->
+  <div class="result-card" id="resultCard">
+    <div class="top-section">
+      <div class="info-left">
+        <div class="info-row"><strong>Name :</strong> <span id="resName">Ahmad Akbar</span></div>
+        <div class="info-row"><strong>Father Name :</strong> <span id="resFather">Gull Akbar</span></div>
+      </div>
+      <div class="reg-num" id="resReg"></div>
+      <div>
+        <img id="resImg" class="profile-img" src="images/my image.png" alt="Profile Picture">
+      </div>
+    </div>
+
+    <table class="grid-table">
+      <tr>
+        <td class="label-col">CNIC / B-Form</td>
+        <td class="val-col" id="resCnic">1710173233685</td>
+        <td class="label-col">Test Date</td>
+        <td class="val-col">20 SEPT 2026</td>
+      </tr>
+      <tr>
+        <td class="label-col">Test Phase</td>
+        <td class="val-col">KMU MDCAT 2026</td>
+        <td class="label-col">Roll No</td>
+        <td class="val-col">6770730</td>
+      </tr>
+      <tr>
+        <td class="label-col"><strong>Marks</strong></td>
+        <td class="val-col bold-val" id="resMarks">153</td>
+        <td class="label-col">Total Marks</td>
+        <td class="val-col">180</td>
+      </tr>
+    </table>
+
+    <div class="bottom-bar"></div>
+  </div>
+
+  <script>
+    function searchResult() {
+      var cnic = document.getElementById('inputCnic').value;
+      var name = document.getElementById('inputName').value;
+      var father = document.getElementById('inputFather').value;
+      var marks = document.getElementById('inputMarks').value;
+
+      document.getElementById('resCnic').innerText = cnic; 
+      document.getElementById('resName').innerText = name;
+      document.getElementById('resFather').innerText = father;
+      document.getElementById('resMarks').innerText = marks;
+
+      // Click karne par result show hoga
+      document.getElementById('resultCard').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
